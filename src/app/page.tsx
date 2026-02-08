@@ -6,7 +6,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold tracking-tight">
             <span className="text-pink-600">Glamour Girls</span>{" "}
-            <span className="text-gray-700">Cleaning</span>
+            <span className="text-gray-700">Cleaning Company</span>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
             <a href="#services" className="hover:text-pink-600 transition">
@@ -15,15 +15,18 @@ export default function Home() {
             <a href="#why-us" className="hover:text-pink-600 transition">
               Why Us
             </a>
+            <a href="#areas" className="hover:text-pink-600 transition">
+              Service Areas
+            </a>
             <a href="#contact" className="hover:text-pink-600 transition">
               Contact
             </a>
           </div>
           <a
-            href="#contact"
+            href="tel:+17862399932"
             className="bg-pink-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-pink-700 transition"
           >
-            Get a Quote
+            (786) 239-9932
           </a>
         </div>
       </nav>
@@ -36,23 +39,26 @@ export default function Home() {
             <span className="text-pink-600">Every Time</span>
           </h1>
           <p className="mt-6 text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Professional cleaning services you can trust. We bring the sparkle
-            so you can focus on what matters most.
+            Professional cleaning services in the Orlando area. We bring the
+            sparkle so you can focus on what matters most.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
               className="bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-700 transition shadow-lg shadow-pink-200"
             >
-              Book Your Cleaning
+              Get a Free Quote
             </a>
             <a
-              href="#services"
+              href="tel:+17862399932"
               className="border-2 border-pink-200 text-pink-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-50 transition"
             >
-              Our Services
+              Call (786) 239-9932
             </a>
           </div>
+          <p className="mt-6 text-sm text-gray-500">
+            Monday &ndash; Friday, 9:00 AM &ndash; 5:00 PM
+          </p>
         </div>
       </section>
 
@@ -64,7 +70,7 @@ export default function Home() {
           </h2>
           <p className="text-gray-600 text-center mb-12 max-w-xl mx-auto">
             From routine upkeep to deep cleans, we handle it all with care and
-            attention to detail.
+            attention to detail. Contact us for a free, personalized quote.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -72,29 +78,26 @@ export default function Home() {
                 title: "Standard Cleaning",
                 description:
                   "Regular maintenance cleaning to keep your home fresh and tidy. Dusting, vacuuming, mopping, and sanitizing.",
-                icon: "&#10024;",
+                icon: "\u2728",
               },
               {
                 title: "Deep Cleaning",
                 description:
                   "A thorough top-to-bottom clean. Baseboards, inside appliances, grout scrubbing, and every hidden corner.",
-                icon: "&#128171;",
+                icon: "\uD83D\uDCAB",
               },
               {
                 title: "Move In / Move Out",
                 description:
                   "Starting fresh or leaving spotless. We make sure every surface is pristine for the next chapter.",
-                icon: "&#127968;",
+                icon: "\uD83C\uDFE0",
               },
             ].map((service) => (
               <div
                 key={service.title}
                 className="bg-white border border-pink-100 rounded-2xl p-8 hover:shadow-lg hover:shadow-pink-100 transition"
               >
-                <div
-                  className="text-4xl mb-4"
-                  dangerouslySetInnerHTML={{ __html: service.icon }}
-                />
+                <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {service.description}
@@ -102,6 +105,14 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p className="text-center mt-10">
+            <a
+              href="#contact"
+              className="text-pink-600 font-semibold hover:text-pink-700 transition"
+            >
+              Contact us for pricing &rarr;
+            </a>
+          </p>
         </div>
       </section>
 
@@ -111,19 +122,17 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Why Choose Glamour Girls?
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Trusted & Vetted",
-                description: "Background-checked, insured professionals",
-              },
-              {
-                title: "Eco-Friendly",
-                description: "Safe, non-toxic products for your family & pets",
+                title: "Eco-Friendly Products",
+                description:
+                  "Safe, non-toxic cleaning products that are gentle on your family and pets",
               },
               {
                 title: "Flexible Scheduling",
-                description: "Weekly, biweekly, monthly, or one-time visits",
+                description:
+                  "Weekly, biweekly, monthly, or one-time visits to fit your schedule",
               },
               {
                 title: "Satisfaction Guaranteed",
@@ -155,8 +164,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Service Areas */}
+      <section id="areas" className="py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Serving the Orlando Area
+          </h2>
+          <p className="text-gray-600 mb-10">
+            Proudly serving homes across Central Florida
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              "Orlando",
+              "Winter Park",
+              "Lake Nona",
+              "Dr. Phillips",
+              "Windermere",
+              "Oviedo",
+              "Kissimmee",
+              "Winter Garden",
+              "Altamonte Springs",
+              "Maitland",
+              "Celebration",
+              "Baldwin Park",
+            ].map((area) => (
+              <span
+                key={area}
+                className="bg-pink-50 text-pink-700 px-4 py-2 rounded-full text-sm font-medium border border-pink-200"
+              >
+                {area}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact / CTA */}
-      <section id="contact" className="py-20 px-6">
+      <section id="contact" className="py-20 px-6 bg-pink-50">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready for a Spotless Home?
@@ -214,6 +258,21 @@ export default function Home() {
               Request a Free Quote
             </button>
           </form>
+
+          <div className="mt-12 pt-8 border-t border-pink-200">
+            <p className="text-gray-700 font-semibold mb-2">
+              Prefer to call?
+            </p>
+            <a
+              href="tel:+17862399932"
+              className="text-2xl font-bold text-pink-600 hover:text-pink-700 transition"
+            >
+              (786) 239-9932
+            </a>
+            <p className="text-gray-500 text-sm mt-2">
+              Monday &ndash; Friday, 9:00 AM &ndash; 5:00 PM
+            </p>
+          </div>
         </div>
       </section>
 
@@ -222,8 +281,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <span className="text-white font-bold text-lg">
-              Glamour Girls Cleaning
+              Glamour Girls Cleaning Company
             </span>
+            <p className="text-sm mt-1">Orlando, FL</p>
           </div>
           <div className="flex gap-6 text-sm">
             <a href="#services" className="hover:text-pink-400 transition">
@@ -232,14 +292,25 @@ export default function Home() {
             <a href="#why-us" className="hover:text-pink-400 transition">
               Why Us
             </a>
+            <a href="#areas" className="hover:text-pink-400 transition">
+              Service Areas
+            </a>
             <a href="#contact" className="hover:text-pink-400 transition">
               Contact
             </a>
           </div>
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Glamour Girls Cleaning. All rights
-            reserved.
-          </p>
+          <div className="text-sm text-right">
+            <a
+              href="tel:+17862399932"
+              className="hover:text-pink-400 transition"
+            >
+              (786) 239-9932
+            </a>
+            <p>
+              &copy; {new Date().getFullYear()} Glamour Girls Cleaning Company.
+              All rights reserved.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
