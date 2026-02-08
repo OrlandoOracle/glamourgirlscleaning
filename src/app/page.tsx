@@ -261,7 +261,7 @@ export default function Home() {
 
           <div className="mt-12 pt-8 border-t border-pink-200">
             <p className="text-gray-700 font-semibold mb-2">
-              Prefer to call?
+              Prefer to reach out directly?
             </p>
             <a
               href="tel:+17862399932"
@@ -269,6 +269,14 @@ export default function Home() {
             >
               (786) 239-9932
             </a>
+            <p className="mt-2">
+              <a
+                href="mailto:glamourgirlscleaningcompany@gmail.com"
+                className="text-pink-600 hover:text-pink-700 transition"
+              >
+                glamourgirlscleaningcompany@gmail.com
+              </a>
+            </p>
             <p className="text-gray-500 text-sm mt-2">
               Monday &ndash; Friday, 9:00 AM &ndash; 5:00 PM
             </p>
@@ -302,9 +310,15 @@ export default function Home() {
           <div className="text-sm text-right">
             <a
               href="tel:+17862399932"
-              className="hover:text-pink-400 transition"
+              className="hover:text-pink-400 transition block"
             >
               (786) 239-9932
+            </a>
+            <a
+              href="mailto:glamourgirlscleaningcompany@gmail.com"
+              className="hover:text-pink-400 transition block"
+            >
+              glamourgirlscleaningcompany@gmail.com
             </a>
             <p>
               &copy; {new Date().getFullYear()} Glamour Girls Cleaning Company.
