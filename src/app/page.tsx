@@ -73,37 +73,44 @@ export default function Home() {
             attention to detail. Contact us for a free, personalized quote.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Standard Cleaning",
-                description:
-                  "Regular maintenance cleaning to keep your home fresh and tidy. Dusting, vacuuming, mopping, and sanitizing.",
-                icon: "\u2728",
-              },
-              {
-                title: "Deep Cleaning",
-                description:
-                  "A thorough top-to-bottom clean. Baseboards, inside appliances, grout scrubbing, and every hidden corner.",
-                icon: "\uD83D\uDCAB",
-              },
-              {
-                title: "Move In / Move Out",
-                description:
-                  "Starting fresh or leaving spotless. We make sure every surface is pristine for the next chapter.",
-                icon: "\uD83C\uDFE0",
-              },
-            ].map((service) => (
-              <div
-                key={service.title}
-                className="bg-white border border-pink-100 rounded-2xl p-8 hover:shadow-lg hover:shadow-pink-100 transition"
-              >
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
+            {/* Standard Cleaning */}
+            <div className="bg-white border border-pink-100 rounded-2xl p-8 hover:shadow-lg hover:shadow-pink-100 transition">
+              <div className="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-5">
+                <svg className="w-7 h-7 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z" />
+                </svg>
               </div>
-            ))}
+              <h3 className="text-xl font-bold mb-3">Standard Cleaning</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Regular maintenance cleaning to keep your home fresh and tidy. Dusting, vacuuming, mopping, and sanitizing.
+              </p>
+            </div>
+
+            {/* Deep Cleaning */}
+            <div className="bg-white border border-pink-100 rounded-2xl p-8 hover:shadow-lg hover:shadow-pink-100 transition">
+              <div className="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-5">
+                <svg className="w-7 h-7 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714a2.25 2.25 0 00.659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5l-1.47 4.4a2.25 2.25 0 01-2.13 1.6h-6.8a2.25 2.25 0 01-2.13-1.6L5 14.5m14 0H5" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Deep Cleaning</h3>
+              <p className="text-gray-600 leading-relaxed">
+                A thorough top-to-bottom clean. Baseboards, inside appliances, grout scrubbing, and every hidden corner.
+              </p>
+            </div>
+
+            {/* Move In / Move Out */}
+            <div className="bg-white border border-pink-100 rounded-2xl p-8 hover:shadow-lg hover:shadow-pink-100 transition">
+              <div className="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-5">
+                <svg className="w-7 h-7 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Move In / Move Out</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Starting fresh or leaving spotless. We make sure every surface is pristine for the next chapter.
+              </p>
+            </div>
           </div>
           <p className="text-center mt-10">
             <a
@@ -123,43 +130,38 @@ export default function Home() {
             Why Choose Glamour Girls?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Eco-Friendly Products",
-                description:
-                  "Safe, non-toxic cleaning products that are gentle on your family and pets",
-              },
-              {
-                title: "Flexible Scheduling",
-                description:
-                  "Weekly, biweekly, monthly, or one-time visits to fit your schedule",
-              },
-              {
-                title: "Satisfaction Guaranteed",
-                description:
-                  "Not happy? We come back and make it right, free of charge",
-              },
-            ].map((item) => (
-              <div key={item.title} className="text-center">
-                <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg
-                    className="w-6 h-6 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+            {/* Eco-Friendly */}
+            <div className="text-center">
+              <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
               </div>
-            ))}
+              <h3 className="font-bold text-lg mb-2">Eco-Friendly Products</h3>
+              <p className="text-gray-600 text-sm">Safe, non-toxic cleaning products that are gentle on your family and pets</p>
+            </div>
+
+            {/* Flexible Scheduling */}
+            <div className="text-center">
+              <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                </svg>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Flexible Scheduling</h3>
+              <p className="text-gray-600 text-sm">Weekly, biweekly, monthly, or one-time visits to fit your schedule</p>
+            </div>
+
+            {/* Satisfaction Guaranteed */}
+            <div className="text-center">
+              <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                </svg>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Satisfaction Guaranteed</h3>
+              <p className="text-gray-600 text-sm">Not happy? We come back and make it right, free of charge</p>
+            </div>
           </div>
         </div>
       </section>
