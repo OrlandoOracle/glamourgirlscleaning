@@ -74,7 +74,7 @@ const jsonLd = {
     "Professional residential cleaning services in Orlando and Central Florida. Standard cleaning, deep cleaning, and move in/move out services.",
   url: "https://glammourgirlscleaning.com",
   telephone: "+1-786-239-9932",
-  email: "glamourcleaningcompany@gmail.com",
+  email: "glamourgirlscleaning@gmail.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Orlando",

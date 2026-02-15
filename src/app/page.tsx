@@ -329,7 +329,7 @@ export default function Home() {
           </p>
           <form
             className="space-y-4 text-left"
-            action="https://formsubmit.co/glamourcleaningcompany@gmail.com"
+            action="https://formsubmit.co/glamourgirlscleaning@gmail.com"
             method="POST"
           >
             {/* FormSubmit.co configuration */}
@@ -403,10 +403,10 @@ export default function Home() {
             </a>
             <p className="mt-2">
               <a
-                href="mailto:glamourcleaningcompany@gmail.com"
+                href="mailto:glamourgirlscleaning@gmail.com"
                 className="text-pink-600 hover:text-pink-700 transition"
               >
-                glamourcleaningcompany@gmail.com
+                glamourgirlscleaning@gmail.com
               </a>
             </p>
             <p className="text-gray-500 text-sm mt-2">
@@ -451,10 +451,10 @@ export default function Home() {
               (786) 239-9932
             </a>
             <a
-              href="mailto:glamourcleaningcompany@gmail.com"
+              href="mailto:glamourgirlscleaning@gmail.com"
               className="hover:text-pink-400 transition block"
             >
-              glamourcleaningcompany@gmail.com
+              glamourgirlscleaning@gmail.com
             </a>
             <p>
               &copy; {new Date().getFullYear()} Glamour Girls Cleaning Company.
