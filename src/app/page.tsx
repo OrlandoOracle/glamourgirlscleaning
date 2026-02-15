@@ -4,14 +4,12 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-pink-100 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">G</span>
-            </div>
-            <div className="text-xl font-bold tracking-tight">
-              <span className="text-pink-600">Glamour Girls</span>{" "}
-              <span className="text-gray-700">Cleaning</span>
-            </div>
+          <a href="#" className="flex items-center">
+            <img
+              src="/logo.png"
+              alt="Glamour Girls Cleaning Co."
+              className="h-12 w-auto"
+            />
           </a>
           <div className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
             <a href="#about" className="hover:text-pink-600 transition">
@@ -43,16 +41,13 @@ export default function Home() {
       <section className="pt-32 pb-20 px-6 bg-gradient-to-br from-pink-50 via-white to-pink-50">
         <div className="max-w-4xl mx-auto text-center">
           {/* Prominent Logo */}
-          <div className="flex justify-center mb-8">
-            <div className="w-28 h-28 bg-gradient-to-br from-pink-500 to-pink-700 rounded-full flex items-center justify-center shadow-2xl shadow-pink-200">
-              <span className="text-white font-bold text-5xl">GG</span>
-            </div>
+          <div className="flex justify-center mb-6">
+            <img
+              src="/logo.png"
+              alt="Glamour Girls Cleaning Co. — Two best friends with feather dusters"
+              className="w-72 md:w-96 h-auto drop-shadow-2xl"
+            />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
-            <span className="text-pink-600">Glamour Girls</span>
-            <br />
-            <span className="text-gray-800">Cleaning Company</span>
-          </h1>
           <p className="mt-8 text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             It started with two best friends and a simple belief: every home
             deserves superb quality care. What began as a shared dream has grown
