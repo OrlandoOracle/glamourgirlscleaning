@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Great_Vibes } from "next/font/google";
 import "./globals.css";
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-great-vibes",
+});
 
 export const metadata: Metadata = {
   title:
@@ -121,7 +128,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={greatVibes.variable}>
       <head>
         {/* JSON-LD Structured Data */}
         <script

@@ -1,3 +1,36 @@
+function SectionHeading({
+  title,
+  subtitle,
+  accent,
+}: {
+  title: string;
+  subtitle?: string;
+  accent?: string;
+}) {
+  return (
+    <div className="text-center mb-12">
+      {accent && (
+        <span className="font-[family-name:var(--font-great-vibes)] text-pink-400 text-2xl md:text-3xl block mb-1">
+          {accent}
+        </span>
+      )}
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        {title}
+      </h2>
+      <div className="flex items-center justify-center gap-3">
+        <span className="block h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-pink-500" />
+        <svg className="w-5 h-5 text-pink-400 drop-shadow-[0_0_6px_rgba(244,114,182,0.5)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z" />
+        </svg>
+        <span className="block h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-pink-500" />
+      </div>
+      {subtitle && (
+        <p className="text-gray-400 mt-4 max-w-xl mx-auto">{subtitle}</p>
+      )}
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-gray-100">
@@ -77,9 +110,10 @@ export default function Home() {
       {/* Our Story */}
       <section id="about" className="py-20 px-6 bg-gray-950">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
-            Our Story
-          </h2>
+          <SectionHeading
+            accent="How It Began"
+            title="Our Story"
+          />
           <div className="bg-gray-900 rounded-3xl p-8 md:p-12 border border-pink-900/30">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
               Glamour Girls Cleaning Company was born from a friendship built on
@@ -108,13 +142,11 @@ export default function Home() {
       {/* Services */}
       <section id="services" className="py-20 px-6 bg-black">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-            Our Services
-          </h2>
-          <p className="text-gray-400 text-center mb-12 max-w-xl mx-auto">
-            From routine upkeep to deep cleans, we handle it all with care and
-            attention to detail. Contact us for a free, personalized quote.
-          </p>
+          <SectionHeading
+            accent="Premium Care"
+            title="Our Services"
+            subtitle="From routine upkeep to deep cleans, we handle it all with care and attention to detail. Contact us for a free, personalized quote."
+          />
           <div className="grid md:grid-cols-3 gap-8">
             {/* Standard Cleaning */}
             <div className="bg-gray-900 border border-pink-900/30 rounded-2xl p-8 hover:border-pink-700/50 hover:shadow-lg hover:shadow-pink-900/20 transition">
@@ -202,9 +234,10 @@ export default function Home() {
       {/* Why Us */}
       <section id="why-us" className="py-20 px-6 bg-gray-950">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            Why Choose Glamour Girls?
-          </h2>
+          <SectionHeading
+            accent="Our Promise"
+            title="Why Choose Glamour Girls?"
+          />
           <div className="grid md:grid-cols-3 gap-8">
             {/* Eco-Friendly */}
             <div className="text-center">
@@ -285,12 +318,11 @@ export default function Home() {
       {/* Service Areas */}
       <section id="areas" className="py-20 px-6 bg-black">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Serving the Orlando Area
-          </h2>
-          <p className="text-gray-400 mb-10">
-            Proudly serving homes across Central Florida
-          </p>
+          <SectionHeading
+            accent="Central Florida"
+            title="Serving the Orlando Area"
+            subtitle="Proudly serving homes across Central Florida"
+          />
           <div className="flex flex-wrap justify-center gap-3">
             {[
               "Orlando",
@@ -320,13 +352,11 @@ export default function Home() {
       {/* Contact / Quote Form */}
       <section id="contact" className="py-20 px-6 bg-gray-950">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Ready for a Spotless Home?
-          </h2>
-          <p className="text-gray-400 mb-10">
-            Get in touch for a free, no-obligation quote. We&apos;ll get back to
-            you within 24 hours.
-          </p>
+          <SectionHeading
+            accent="Get in Touch"
+            title="Ready for a Spotless Home?"
+            subtitle="Get in touch for a free, no-obligation quote. We'll get back to you within 24 hours."
+          />
           <form
             className="space-y-4 text-left"
             action="https://formsubmit.co/glamourgirlscleaningcompany@gmail.com"
@@ -341,7 +371,7 @@ export default function Home() {
             <input
               type="hidden"
               name="_next"
-              value="https://glammourgirlscleaning.com/#contact"
+              value="https://glamourgirlscleaning.com/#contact"
             />
             <input type="hidden" name="_captcha" value="true" />
             <input type="text" name="_honey" style={{ display: "none" }} />
