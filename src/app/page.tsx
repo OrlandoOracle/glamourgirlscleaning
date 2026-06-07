@@ -19,8 +19,18 @@ function SectionHeading({
       </h2>
       <div className="flex items-center justify-center gap-3">
         <span className="block h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-pink-500" />
-        <svg className="w-5 h-5 text-pink-400 drop-shadow-[0_0_6px_rgba(244,114,182,0.5)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z" />
+        <svg
+          className="w-5 h-5 text-pink-400 drop-shadow-[0_0_6px_rgba(244,114,182,0.5)]"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z"
+          />
         </svg>
         <span className="block h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-pink-500" />
       </div>
@@ -85,7 +95,8 @@ export default function Home() {
             It started with two best friends and a simple belief: every home
             deserves superb quality care. What began as a shared dream has grown
             into Orlando&apos;s most trusted cleaning team &mdash; bringing that
-            same heart, hustle, and attention to detail into every home we touch.
+            same heart, hustle, and attention to detail into every home we
+            touch.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -110,22 +121,19 @@ export default function Home() {
       {/* Our Story */}
       <section id="about" className="py-20 px-6 bg-gray-950">
         <div className="max-w-4xl mx-auto">
-          <SectionHeading
-            accent="How It Began"
-            title="Our Story"
-          />
+          <SectionHeading accent="How It Began" title="Our Story" />
           <div className="bg-gray-900 rounded-3xl p-8 md:p-12 border border-pink-900/30">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
               Glamour Girls Cleaning Company was born from a friendship built on
               trust, hard work, and a shared vision. As two best friends, we
-              always knew we wanted to build something together &mdash; something
-              that reflected who we are: dedicated, detail-oriented, and
-              passionate about making people&apos;s lives easier.
+              always knew we wanted to build something together &mdash;
+              something that reflected who we are: dedicated, detail-oriented,
+              and passionate about making people&apos;s lives easier.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
               We started cleaning homes side by side, and from day one, our
-              standard was simple &mdash; treat every home like it&apos;s our own.
-              That commitment to superb quality is what sets us apart. We
+              standard was simple &mdash; treat every home like it&apos;s our
+              own. That commitment to superb quality is what sets us apart. We
               don&apos;t cut corners. We don&apos;t rush. We pour the same care
               and pride into every single job.
             </p>
@@ -165,7 +173,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Standard Cleaning</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">
+                Standard Cleaning
+              </h3>
               <p className="text-gray-400 leading-relaxed">
                 Regular maintenance cleaning to keep your home fresh and tidy.
                 Dusting, vacuuming, mopping, and sanitizing.
@@ -189,7 +199,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Deep Cleaning</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">
+                Deep Cleaning
+              </h3>
               <p className="text-gray-400 leading-relaxed">
                 A thorough top-to-bottom clean. Baseboards, inside appliances,
                 grout scrubbing, and every hidden corner.
@@ -213,7 +225,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Move In / Move Out</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">
+                Move In / Move Out
+              </h3>
               <p className="text-gray-400 leading-relaxed">
                 Starting fresh or leaving spotless. We make sure every surface
                 is pristine for the next chapter.
@@ -256,7 +270,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg mb-2 text-white">Eco-Friendly Products</h3>
+              <h3 className="font-bold text-lg mb-2 text-white">
+                Eco-Friendly Products
+              </h3>
               <p className="text-gray-400 text-sm">
                 Safe, non-toxic cleaning products that are gentle on your family
                 and pets
@@ -280,7 +296,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="font-bold text-lg mb-2 text-white">Flexible Scheduling</h3>
+              <h3 className="font-bold text-lg mb-2 text-white">
+                Flexible Scheduling
+              </h3>
               <p className="text-gray-400 text-sm">
                 Weekly, biweekly, monthly, or one-time visits to fit your
                 schedule
@@ -443,7 +461,6 @@ export default function Home() {
               Monday &ndash; Friday, 9:00 AM &ndash; 5:00 PM
             </p>
           </div>
-
         </div>
       </section>
 
@@ -452,7 +469,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <span className="text-white font-bold text-lg">
-              Glamour Girls Cleaning Company
+              Glamour Girls Cleaning Company LLC
             </span>
             <p className="text-sm mt-1">Orlando, FL</p>
           </div>
@@ -487,8 +504,8 @@ export default function Home() {
               glamourgirlscleaningcompany@gmail.com
             </a>
             <p>
-              &copy; {new Date().getFullYear()} Glamour Girls Cleaning Company.
-              All rights reserved.
+              &copy; {new Date().getFullYear()} Glamour Girls Cleaning Company
+              LLC. All rights reserved.
             </p>
           </div>
         </div>

@@ -264,7 +264,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         <div>
           <span className="text-white font-bold text-lg">
-            Glamour Girls Cleaning Company
+            Glamour Girls Cleaning Company LLC
           </span>
           <p className="text-sm mt-1">Orlando, FL</p>
         </div>
@@ -290,7 +290,7 @@ export function Footer() {
             (786) 239-9932
           </a>
           <p className="text-gray-500">
-            &copy; 2026 Glamour Girls Cleaning Company.
+            &copy; 2026 Glamour Girls Cleaning Company LLC.
           </p>
         </div>
       </div>

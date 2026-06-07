@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     "cleaning services Winter Park",
     "cleaning services Lake Nona",
   ],
-  authors: [{ name: "Glamour Girls Cleaning Company" }],
-  creator: "Glamour Girls Cleaning Company",
-  publisher: "Glamour Girls Cleaning Company",
+  authors: [{ name: "Glamour Girls Cleaning Company LLC" }],
+  creator: "Glamour Girls Cleaning Company LLC",
+  publisher: "Glamour Girls Cleaning Company LLC",
   robots: {
     index: true,
     follow: true,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://glamourgirlscleaning.com",
-    siteName: "Glamour Girls Cleaning Company",
+    siteName: "Glamour Girls Cleaning Company LLC",
     title:
       "Glamour Girls Cleaning Company | Professional House Cleaning in Orlando, FL",
     description:
@@ -76,7 +76,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://glamourgirlscleaning.com",
-  name: "Glamour Girls Cleaning Company",
+  name: "Glamour Girls Cleaning Company LLC",
+  legalName: "Glamour Girls Cleaning Company LLC",
   description:
     "Professional residential cleaning services in Orlando and Central Florida. Standard cleaning, deep cleaning, and move in/move out services.",
   url: "https://glamourgirlscleaning.com",
