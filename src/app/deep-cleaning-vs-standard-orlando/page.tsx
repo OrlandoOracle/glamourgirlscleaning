@@ -173,10 +173,10 @@ export default function Page() {
             Why deep cleans cost more
           </h2>
           <p>
-            A deep clean typically runs 1.5&times;&ndash;2&times; a standard
-            clean because it takes more time and covers areas standard visits
-            skip. It&apos;s a one-time reset — your recurring visits afterward
-            stay at the lower standard rate. See full pricing on our{" "}
+            A deep clean costs more than a standard clean because it takes more
+            time and covers areas standard visits skip. It&apos;s a one-time
+            reset — your recurring visits afterward stay at the lower standard
+            rate. See what drives price on our{" "}
             <a
               className="text-pink-400 hover:text-pink-300"
               href="/house-cleaning-cost-orlando"

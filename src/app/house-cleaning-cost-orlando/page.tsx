@@ -83,38 +83,13 @@ export default function Page() {
 
         <section>
           <h2 className="text-2xl font-bold text-white mb-4">By home size</h2>
-          <div className="overflow-hidden rounded-2xl border border-pink-900/30">
-            <table className="w-full text-left">
-              <thead className="bg-gray-900 text-pink-300 text-sm">
-                <tr>
-                  <th className="px-5 py-3">Home size</th>
-                  <th className="px-5 py-3">Central Florida typical range*</th>
-                </tr>
-              </thead>
-              <tbody className="text-sm divide-y divide-pink-900/20">
-                <tr>
-                  <td className="px-5 py-3">Studio / 1 bed</td>
-                  <td className="px-5 py-3">$90&ndash;$130</td>
-                </tr>
-                <tr>
-                  <td className="px-5 py-3">2 bed / 2 bath</td>
-                  <td className="px-5 py-3">$120&ndash;$170</td>
-                </tr>
-                <tr>
-                  <td className="px-5 py-3">3 bed / 2 bath</td>
-                  <td className="px-5 py-3">$150&ndash;$220</td>
-                </tr>
-                <tr>
-                  <td className="px-5 py-3">4+ bed</td>
-                  <td className="px-5 py-3">$200&ndash;$300+</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-gray-500 text-sm mt-3">
-            *Typical Central Florida market ranges for a standard clean, shown
-            for guidance only — your exact price varies by condition and
-            add-ons. Your quote from us is always free.
+          <p>
+            Size is the single biggest driver. A studio takes a fraction of the
+            time a four-bedroom does, so square footage and the number of
+            bathrooms move the price the most. Condition matters too — a home
+            that&apos;s already tidy cleans faster than one playing catch-up.
+            Because every home is different, we don&apos;t post a price list —
+            we give you an exact, no-obligation quote for free.
           </p>
         </section>
 
@@ -129,9 +104,8 @@ export default function Page() {
             </li>
             <li>
               <strong className="text-pink-300">Deep clean</strong> — first-time
-              or seasonal; typically 1.5&times;&ndash;2&times; a standard clean
-              because it adds baseboards, inside appliances, grout, and built-up
-              areas.{" "}
+              or seasonal; costs more than a standard clean because it adds
+              baseboards, inside appliances, grout, and built-up areas.{" "}
               <a
                 className="text-pink-400 hover:text-pink-300"
                 href="/deep-cleaning-vs-standard-orlando"
