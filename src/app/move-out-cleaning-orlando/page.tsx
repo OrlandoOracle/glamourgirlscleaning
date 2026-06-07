@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Professional move-out cleaning in Orlando. Landlord- and realtor-approved checklist, transparent process, fast booking. Bonded & insured. Free quotes.",
   alternates: {
-    canonical: "https://glammourgirlscleaning.com/move-out-cleaning-orlando",
+    canonical: "https://glamourgirlscleaning.com/move-out-cleaning-orlando",
   },
 };
 

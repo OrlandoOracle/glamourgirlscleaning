@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://glammourgirlscleaning.com/sitemap.xml
+Sitemap: https://glamourgirlscleaning.com/sitemap.xml

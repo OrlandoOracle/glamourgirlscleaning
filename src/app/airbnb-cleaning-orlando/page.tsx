@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Reliable, fast turnover cleaning for Airbnb and short-term rentals in Lake Nona, Dr. Phillips & greater Orlando. 5-star-ready every time. Bonded & insured.",
   alternates: {
-    canonical: "https://glammourgirlscleaning.com/airbnb-cleaning-orlando",
+    canonical: "https://glamourgirlscleaning.com/airbnb-cleaning-orlando",
   },
 };
 

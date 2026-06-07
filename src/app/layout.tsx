@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://glammourgirlscleaning.com",
+    url: "https://glamourgirlscleaning.com",
     siteName: "Glamour Girls Cleaning Company",
     title:
       "Glamour Girls Cleaning Company | Professional House Cleaning in Orlando, FL",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
       "Professional residential cleaning in Orlando & Central Florida. Free quotes — call (786) 239-9932.",
   },
   alternates: {
-    canonical: "https://glammourgirlscleaning.com",
+    canonical: "https://glamourgirlscleaning.com",
   },
   other: {
     "geo.region": "US-FL",
@@ -75,11 +75,11 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://glammourgirlscleaning.com",
+  "@id": "https://glamourgirlscleaning.com",
   name: "Glamour Girls Cleaning Company",
   description:
     "Professional residential cleaning services in Orlando and Central Florida. Standard cleaning, deep cleaning, and move in/move out services.",
-  url: "https://glammourgirlscleaning.com",
+  url: "https://glamourgirlscleaning.com",
   telephone: "+1-786-239-9932",
   email: "glamourgirlscleaningcompany@gmail.com",
   address: {

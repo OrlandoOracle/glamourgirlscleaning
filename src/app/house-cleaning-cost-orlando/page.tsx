@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "What house cleaning really costs in Orlando — by home size, cleaning type, and frequency. Transparent guidance from a local, bonded & insured team. Free quotes.",
   alternates: {
-    canonical: "https://glammourgirlscleaning.com/house-cleaning-cost-orlando",
+    canonical: "https://glamourgirlscleaning.com/house-cleaning-cost-orlando",
   },
 };
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Weekly, bi-weekly, or monthly? How to choose the right recurring cleaning frequency for your Orlando home — by household, budget, and lifestyle.",
   alternates: {
     canonical:
-      "https://glammourgirlscleaning.com/recurring-house-cleaning-orlando",
+      "https://glamourgirlscleaning.com/recurring-house-cleaning-orlando",
   },
 };
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Not sure if you need a deep clean or a standard clean? Here's the simple difference, what each includes, and how to choose — for Orlando homes.",
   alternates: {
     canonical:
-      "https://glammourgirlscleaning.com/deep-cleaning-vs-standard-orlando",
+      "https://glamourgirlscleaning.com/deep-cleaning-vs-standard-orlando",
   },
 };
 
