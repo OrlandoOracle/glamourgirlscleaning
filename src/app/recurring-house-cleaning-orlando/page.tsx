@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import {
   Nav,
+  PageHero,
+  Section,
+  SectionHeading,
+  Card,
+  AreaChips,
   ContactCTA,
   Footer,
-  SERVICE_AREAS,
 } from "../_components/SiteChrome";
 
 export const metadata: Metadata = {
@@ -42,6 +46,29 @@ const faqJsonLd = {
   })),
 };
 
+const cadences = [
+  {
+    name: "Weekly",
+    popular: false,
+    body: "Best for busy families with kids and/or pets, high-traffic homes, and anyone who wants it to always feel “just cleaned.” Bonus: lowest per-visit rate.",
+  },
+  {
+    name: "Bi-weekly",
+    popular: true,
+    body: "Best for working professionals and couples, and homes that stay reasonably tidy between visits. The best balance of clean and cost.",
+  },
+  {
+    name: "Monthly",
+    popular: false,
+    body: "Best for smaller households or single occupants, and tidy homes that need a periodic reset. More buildup between visits.",
+  },
+  {
+    name: "One-time / seasonal",
+    popular: false,
+    body: "Best for spring or holiday resets, pre- or post-event cleans, or trying us out before committing.",
+  },
+];
+
 export default function Page() {
   return (
     <div className="min-h-screen bg-black text-gray-100">
@@ -51,114 +78,99 @@ export default function Page() {
       />
       <Nav />
 
-      <header className="pt-32 pb-12 px-6 max-w-3xl mx-auto text-center">
-        <span className="font-[family-name:var(--font-great-vibes)] text-pink-400 text-2xl md:text-3xl block mb-2">
-          Homeowner&apos;s Guide
-        </span>
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-5 leading-tight">
-          How Often Should You Schedule Recurring House Cleaning?
-        </h1>
-        <p className="text-gray-400 text-lg">
-          Weekly, bi-weekly, or monthly? Here&apos;s how to choose for your
-          Orlando home.
-        </p>
-      </header>
+      <PageHero
+        accent="Homeowner's Guide"
+        title="How Often Should You Schedule Recurring House Cleaning?"
+        subtitle="Weekly, bi-weekly, or monthly? Here's how to choose the right cadence for your Orlando home."
+      />
 
-      <main className="max-w-3xl mx-auto px-6 pb-8 space-y-12 text-gray-300 leading-relaxed">
-        <section>
-          <h2 className="text-2xl font-bold text-white mb-4">
-            The short answer
-          </h2>
-          <p>
+      {/* Short answer */}
+      <Section tone="gray">
+        <SectionHeading
+          accent="The Short Answer"
+          title="Bi-Weekly Is the Sweet Spot"
+        />
+        <Card className="rounded-3xl !p-8 md:!p-12 text-center">
+          <p className="text-lg text-gray-300 leading-relaxed">
             For most Orlando homes,{" "}
-            <strong className="text-pink-300">bi-weekly</strong> is the sweet
-            spot — it keeps the home consistently clean without paying for
-            weekly visits. But the right answer depends on your household.
+            <strong className="text-pink-300">bi-weekly</strong> keeps the home
+            consistently clean without paying for weekly visits. But the right
+            answer depends on your household — here&apos;s how to tell.
           </p>
-        </section>
+        </Card>
+      </Section>
 
-        <section>
-          <h2 className="text-2xl font-bold text-white mb-4">
-            Match the frequency to your home
-          </h2>
-          <div className="space-y-4">
-            <div className="rounded-2xl border border-pink-900/30 bg-gray-950 p-5">
-              <h3 className="text-pink-300 font-semibold mb-2">Weekly</h3>
-              <p className="text-sm">
-                Best for busy families with kids and/or pets, high-traffic
-                homes, and anyone who wants it to always feel &ldquo;just
-                cleaned.&rdquo; Bonus: lowest per-visit rate.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-pink-500/40 bg-pink-950/20 p-5">
-              <h3 className="text-pink-300 font-semibold mb-2">
-                Bi-weekly{" "}
-                <span className="text-xs text-pink-400 font-normal">
-                  — most popular
-                </span>
-              </h3>
-              <p className="text-sm">
-                Best for working professionals and couples, and homes that stay
-                reasonably tidy between visits. The best balance of clean and
-                cost.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-pink-900/30 bg-gray-950 p-5">
-              <h3 className="text-pink-300 font-semibold mb-2">Monthly</h3>
-              <p className="text-sm">
-                Best for smaller households or single occupants, and tidy homes
-                that need a periodic reset. Note: more buildup between visits
-                means a slightly higher per-visit rate.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-pink-900/30 bg-gray-950 p-5">
-              <h3 className="text-pink-300 font-semibold mb-2">
-                One-time / seasonal
-              </h3>
-              <p className="text-sm">
-                Best for spring or holiday resets, pre- or post-event cleans, or
-                trying us out before committing.
-              </p>
-            </div>
-          </div>
-        </section>
+      {/* Cadences */}
+      <Section tone="black" width="wide">
+        <SectionHeading
+          accent="Find Your Fit"
+          title="Match the Frequency to Your Home"
+        />
+        <div className="grid sm:grid-cols-2 gap-8">
+          {cadences.map((c) => (
+            <Card
+              key={c.name}
+              className={c.popular ? "!border-pink-500/50 !bg-pink-950/20" : ""}
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <h3 className="text-xl font-bold text-white">{c.name}</h3>
+                {c.popular && (
+                  <span className="bg-pink-600 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+                    Most popular
+                  </span>
+                )}
+              </div>
+              <p className="text-gray-400 leading-relaxed">{c.body}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
 
-        <section>
-          <h2 className="text-2xl font-bold text-white mb-4">
-            Why Orlando&apos;s climate matters
-          </h2>
-          <p>
+      {/* Climate */}
+      <Section tone="gray">
+        <SectionHeading
+          accent="Florida Factor"
+          title="Why Orlando's Climate Matters"
+        />
+        <Card className="rounded-3xl !p-8 md:!p-12">
+          <p className="text-lg text-gray-300 leading-relaxed">
             Florida humidity means dust, pollen, and bathroom mildew build up
             faster than in drier climates. Many Orlando homeowners who start
             monthly move to bi-weekly once they see how quickly things
             accumulate.
           </p>
-        </section>
+        </Card>
+      </Section>
 
-        <section>
-          <h2 className="text-2xl font-bold text-white mb-4">
-            The cost advantage of recurring service
-          </h2>
-          <p>
+      {/* Cost advantage */}
+      <Section tone="black">
+        <SectionHeading
+          accent="Recurring Savings"
+          title="The Cost Advantage of Recurring Service"
+        />
+        <Card className="rounded-3xl !p-8 md:!p-12 text-center">
+          <p className="text-lg text-gray-300 leading-relaxed">
             Recurring clients pay{" "}
             <strong className="text-pink-300">less per visit</strong> than
             one-time bookings because a maintained home takes less time. The
-            more often we visit, the lower your per-visit rate. See the full
-            breakdown on our{" "}
+            more often we visit, the lower your per-visit rate.
+          </p>
+          <p className="mt-6">
             <a
-              className="text-pink-400 hover:text-pink-300"
+              className="text-pink-400 font-semibold hover:text-pink-300"
               href="/house-cleaning-cost-orlando"
             >
-              Orlando cost guide &rarr;
+              See what drives cleaning price &rarr;
             </a>
           </p>
-        </section>
+        </Card>
+      </Section>
 
-        <section className="rounded-2xl border border-pink-900/30 bg-gray-950 p-6">
-          <h2 className="text-xl font-bold text-white mb-2">
-            Our recommendation
-          </h2>
-          <p>
+      {/* Recommendation */}
+      <Section tone="gray">
+        <SectionHeading accent="Our Advice" title="Where to Start" />
+        <Card className="rounded-3xl !p-8 md:!p-12 text-center">
+          <p className="text-lg text-gray-300 leading-relaxed">
             Start with a{" "}
             <a
               className="text-pink-400 hover:text-pink-300"
@@ -170,12 +182,34 @@ export default function Page() {
             <strong className="text-pink-300">bi-weekly</strong> standard
             visits. Adjust up or down after a month — we make it easy to change.
           </p>
-          <p className="text-gray-500 text-sm mt-3">Serving {SERVICE_AREAS}</p>
-        </section>
-      </main>
+        </Card>
+      </Section>
+
+      {/* FAQ */}
+      <Section tone="black">
+        <SectionHeading accent="Good to Know" title="Frequently Asked" />
+        <div className="space-y-4">
+          {faqs.map((f) => (
+            <Card key={f.q} className="!p-6">
+              <h3 className="font-bold text-white mb-2">{f.q}</h3>
+              <p className="text-gray-400 leading-relaxed">{f.a}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* Areas */}
+      <Section tone="gray">
+        <SectionHeading
+          accent="Central Florida"
+          title="Where We Clean"
+          subtitle="Recurring house cleaning across Orlando and Central Florida."
+        />
+        <AreaChips />
+      </Section>
 
       <ContactCTA
-        heading="Find your perfect schedule"
+        heading="Find Your Perfect Schedule"
         subtitle="Get a free quote and we'll recommend a cadence that fits your home and budget."
       />
       <Footer />
