@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "Do you clean for realtors and sellers?",
-    a: "Yes. We get listings photo-ready and showing-ready, and we offer recurring turnover cleaning for property managers across Orlando and Kissimmee.",
+    a: "Yes. We get listings photo-ready and showing-ready for realtors and sellers across Orlando and Central Florida.",
   },
 ];
 
@@ -127,11 +127,8 @@ export default function Page() {
 
       {/* Who it's for */}
       <Section tone="gray" width="wide">
-        <SectionHeading
-          accent="Who We Help"
-          title="Renter, Seller, or Property Manager?"
-        />
-        <div className="grid md:grid-cols-3 gap-8">
+        <SectionHeading accent="Who We Help" title="Renter or Seller?" />
+        <div className="grid md:grid-cols-2 gap-8">
           <Card>
             <h3 className="text-lg font-bold mb-2 text-pink-300">Renters</h3>
             <p className="text-gray-400 leading-relaxed">
@@ -146,14 +143,6 @@ export default function Page() {
             <p className="text-gray-400 leading-relaxed">
               We get listings photo- and showing-ready so every walkthrough
               shines.
-            </p>
-          </Card>
-          <Card>
-            <h3 className="text-lg font-bold mb-2 text-pink-300">
-              Property managers
-            </h3>
-            <p className="text-gray-400 leading-relaxed">
-              Ask about recurring turnover rates across Orlando and Kissimmee.
             </p>
           </Card>
         </div>
@@ -205,7 +194,7 @@ export default function Page() {
         <SectionHeading
           accent="Central Florida"
           title="Where We Clean"
-          subtitle="Move-out and turnover cleaning across Orlando and Central Florida."
+          subtitle="Move-out cleaning across Orlando and Central Florida."
         />
         <AreaChips />
       </Section>
